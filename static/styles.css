@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Sans:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    background-image: url(./fondo.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+
+h1{
+    font-family: 'Amatic SC';
+    font-size: clamp(30px,10vw,70px);
+    margin: 1px;
+}
+
+h2{
+    font-family: 'Quicksand';
+    font-size: clamp(20px,5vw,28px);
+    margin: 10px;
+}
+
+a{
+    font-family: 'PT Sans';
+    font-size: clamp(10px,3vw,18px);
+    font-weight: bold;
+    width: fit-content;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.links li{
+    display: inline-block;
+    margin-top: 5px;
+    margin: 10px;
+}
+
+.links a{
+    position: relative;
+    font-size: clamp(15px,3vw,25px);
+    color: black;
+
+}
+
+.links i:hover{
+    transform: scale(1.5);
+}
