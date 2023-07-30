@@ -1,13 +1,12 @@
 #[macro_use] extern crate rocket;
-use rocket_dyn_templates::{Template, context};
+use rocket::response::content::RawHtml;
 use rocket::fs::NamedFile;
 use std::path::{Path, PathBuf};
 
+
 #[get("/")]
-fn index() -> Template {
-    Template::render("index", context!{
-        title: "Renzo Tincopa Barreto"
-    })
+fn  index() -> RawHtml<&'static str> { 
+    RawHtml(include_str!("index.html"))
 }
 
 #[get("/static/<file..>")]
@@ -24,5 +23,4 @@ async fn static_files(file: PathBuf) -> Option<NamedFile> {
 fn rocket() -> _ {
     rocket::build()
     .mount("/", routes![index, static_files])
-    .attach(Template::fairing())
 }
