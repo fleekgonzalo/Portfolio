@@ -39,6 +39,17 @@ p{
     text-align: center;
 }
 
+button{
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: transparent;
+    background-blend-mode: 0;
+    font-family: 'PT Sans';
+    font-size: clamp(8px,2vw,15px);
+    font-weight: bold;
+    margin: 4px;
+}
+
 .links li{
     display: inline-block;
     margin-top: 5px;
