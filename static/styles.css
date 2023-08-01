@@ -24,7 +24,7 @@ h1{
 h2{
     font-family: 'Quicksand';
     font-size: clamp(20px,5vw,28px);
-    margin: 10px;
+    margin: 5px;
 }
 
 a{
@@ -47,7 +47,13 @@ button{
     font-family: 'PT Sans';
     font-size: clamp(8px,2vw,15px);
     font-weight: bold;
-    margin: 4px;
+    margin: 0 0 0 2px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: clamp(8px,2vw,15px);
 }
 
 .links li{
